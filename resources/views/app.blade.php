@@ -24,6 +24,9 @@
 
     <script type="text/javascript" src="{{url(elixir('js/app.min.js'))}}"></script>
 
+    <!-- Font awesome cdn script -->
+    <script src="https://use.fontawesome.com/745d9d7f65.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,11 +35,22 @@
     <![endif]-->
 </head>
 <body>
+  <div class="video-background">
+    <div class="video-foreground">
+      <iframe id="vimeo_player" src="https://player.vimeo.com/video/131049710?autoplay=1&loop=1&automute=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="wrapper">
     <div class="container">
         @yield('content')
     </div>
     <div id="footer">
         {!!trans('messages.copyright')!!}
     </div>
+  </div>
+  <script type="text/javascript">
+    var video = $("#vimeo_player");
+    video.vimeo("setVolume", 0);
+  </script>
 </body>
 </html>

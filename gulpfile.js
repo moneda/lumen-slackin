@@ -15,7 +15,8 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.scripts([
         'jquery.js',
-        'bootstrap.js'
+        'bootstrap.js',
+	'jquery.vimeo.api.min.js'
     ], 'public/js/all.js', 'public/js');
 
     mix.scripts(['app.js'], 'public/js/app.min.js', 'public/js');
