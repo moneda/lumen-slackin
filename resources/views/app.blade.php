@@ -46,6 +46,7 @@
     </div>
     <div id="footer">
         {!!trans('messages.copyright')!!}
+        <span> | Video by <a href="https://vimeo.com/131049710" target="_blank">Twilio Beacon</a></span>
     </div>
   </div>
   <script type="text/javascript">
