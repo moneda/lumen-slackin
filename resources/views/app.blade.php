@@ -73,7 +73,8 @@
     "sameAs": [
       "https://www.facebook.com/pehacheperos",
       "https://twitter.com/phpmx",
-      "https://www.meetup.com/PHP-The-Right-Way/"
+      "https://www.meetup.com/PHP-The-Right-Way/",
+      "https://chat.phpmexico.mx/"
     ]
   }
   </script>
